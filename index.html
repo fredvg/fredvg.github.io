@@ -3,20 +3,21 @@ layout: default
 ---
 
 <div class="home">
-  <h2 class="section-heading">Journal</h2>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-	
-	<h2 class="section-heading">Project</h2>
-<!--   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-
+	<section class="home-journal">
+	  <h2 class="section-heading">Journal</h2>
+	  <ul class="post-list">
+	    {% for post in site.posts %}
+	      <li>
+	        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	        <h3>
+	          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	        </h3>
+	      </li>
+	    {% endfor %}
+	  </ul>
+	</section>
+	<section class="home-project">
+		<h2 class="section-heading">Project</h2>
+	</section>	
+	<!--   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 </div>
