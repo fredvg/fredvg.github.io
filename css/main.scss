@@ -47,3 +47,10 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+// MBF Custom Styles
+section.home-journal {
+	background-color: orange;
+	color: $grey-color-light;
+	text-align: center;
+}
