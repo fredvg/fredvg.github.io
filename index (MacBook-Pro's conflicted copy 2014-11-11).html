@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="home">
+	<section class="journal">
+	  <h2 class="section-heading">Journal</h2>
+	  <ul class="post-list">
+	    {% for post in site.posts %}
+	      <li>
+	        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	        <h3>
+	          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	        </h3>
+	      </li>
+	    {% endfor %}
+	  </ul>
+	</section>
+	<section class="project">
+		<h2 class="section-heading">Project</h2>
+		<ul class="project-list">
+	    {% for project in site.project %}
+	      <li>
+	        <span class="project-meta">{{ project.date | date: "%b %-d, %Y" }}</span>
+	        <h3>
+	          <a class="project-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+	        </h3>
+	      </li>
+	    {% endfor %}
+	  </ul>
+
+		
+	</section>	
+	<!--   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+</div>
