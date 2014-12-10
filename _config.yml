@@ -2,7 +2,7 @@
 title: 	Made by Fred
 email: fred@madebyfred.com
 description: > # this means to ignore newlines until "baseurl:"
-  I'm Frederik Van Geloven and Made by Fred is my personal web site. As is often the case with these vanity sites, it's not updated nearly often enough. You should still subscribe to the RSS feed though. For more frequent updates you can follow me on Twitter, there's a link below. If you want to say hi, there are a few ways to get in touch, most are listed [here: fredvg.flavors.me](http://fredvg.flavors.me).
+  I'm Frederik Van Geloven and Made by Fred is my personal web site. I'll be honest with you, I should update it more frequently. I'm a little better at keeping up with Twitter, but not by much. If you want to say hi, or have an awesome project for us to work on, you should send me an email. Links to Twitter and email are to the left.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: frederikvg
