@@ -1,10 +1,8 @@
 # Site settings
 title: 	Made by Fred
-email: your-email@domain.com
+email: fred@madebyfred.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I'm Frederik Van Geloven and Made by Fred is my personal web site. As is often the case with these vanity sites, it's not updated nearly often enough. You should still subscribe to the RSS feed though. For more frequent updates you can follow me on Twitter, there's a link below. If you want to say hi, there are a few ways to get in touch, most are listed [here: fredvg.flavors.me](http://fredvg.flavors.me).
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: frederikvg
