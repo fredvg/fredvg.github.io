@@ -92,14 +92,14 @@ a.site-title {
 	margin: 0;
 }
 div.home {
-	height: 100vh;
+	/* height: 100vh; */
 	
 	section {
 		position: relative;
 		color: $grey-color-light;
 		text-align: center;
 		width: 100%;
-		height: 50%;
+		height: 80vh;
 		&.journal {
 			background-color: #a2b0bd;
 		}
