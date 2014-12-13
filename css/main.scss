@@ -53,8 +53,8 @@ $on-laptop:        800px;
 
 // MBF Custom Styles
 header.site-header {
-	background-color: #b0bda2;
 	border: none;
+	z-index: 10;
 }
 a.site-title {
 	font-family: "Bitter", serif;
@@ -100,6 +100,7 @@ div.home {
 		text-align: center;
 		width: 100%;
 		height: 50%;
+		z-index: 1;		
 		&.journal {
 			background-color: #a2b0bd;
 		}
