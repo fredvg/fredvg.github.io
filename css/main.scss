@@ -19,6 +19,7 @@ $spacing-unit:     30px;
 $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
+$link-color: 	   #284d70;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -52,36 +53,45 @@ $on-laptop:        800px;
 ;
 
 // MBF Custom Styles
+a {
+  color: $link-color;
+  }
 header.site-header {
 	border: none;
 	z-index: 10;
-	background-color: #a2bdaf;
+/* 	background-color: #a2bdaf; */
+	padding: 3em 0;
 }
-a.site-title {
+.site-title {	
+	float: none;
 	font-family: "Bitter", serif;
-	font-size: 38px;
-	line-height: 1em;
+	font-size: 64px;
+	line-height: 1.2em;
 	letter-spacing: .02em;
 	text-transform: uppercase;
 	margin: 0 auto;
-	text-decoration: none;
-	&:hover .line {
+	width: 167px;
+	a {	
+	  text-decoration: none;
+	  color: $link-color;
+	  &:hover .line {
 	 	width: 0%;
 	 	-webkit-transition: all 500ms ease-out;
 	 	-moz-transition: all 500ms ease-out;
 	 	-o-transition: all 500ms ease-out;
 	 	transition: all 500ms ease-out;	
+	  }
 	}
 }
 .line-1 {
 	font-family: "Questrial", sans-serif;
-	font-size: 24px;
+	font-size: 40px;
 	text-transform: lowercase;
 }
 .line {
-	 height:2px;
+	 height:3px;
 	 width:100%;
-	 margin: 0 auto 2px;
+	 margin: 0 auto 10px;
 	 background-color: #f76f00;
 	 	-webkit-transition: background-color 500ms ease-in;
 	 	-moz-transition: background-color 500ms ease-in;
@@ -112,7 +122,7 @@ div.home {
 	}
 }
 footer.site-footer {
-	background-color: #a2bdaf;
+/* 	background-color: #a2bdaf; */
 	border: none;
 }
 
@@ -157,4 +167,20 @@ a.site-title {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+/* Homepage */
+.about {
+	font-size: 1.5em;
+}
+.intro {
+	font-size: 1.5em;
+	margin: 2em 0;
+}
+.contact {
+	background-color: #efefef;
+	width: 80%;
+	margin: 2em auto;
+	font-size: 1.2em;
+	padding: .5em;
 }
