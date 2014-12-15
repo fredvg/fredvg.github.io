@@ -53,6 +53,9 @@ $on-laptop:        800px;
 ;
 
 // MBF Custom Styles
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#bec0bb/* #cbccc8 */)) fixed;
+}
 a {
   color: $link-color;
   }
