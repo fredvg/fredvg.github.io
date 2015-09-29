@@ -2,10 +2,67 @@
 layout: default
 ---
 <div class="wrapper">
-	<section class="about">
-		<p class="intro">Thanks for visiting! This is the personal website, and digital playground, of Frederik Van Geloven.</p> 
-		<p>You might notice that things are quite bare bones right now. That's because I'm focussing on my day job, my almost-two year old son, and enjoying fall in Vermont. Occasionally, I'll drop in to experiment with some new technique I'm learning about. So if things look off, that might be why.</p>
-		<p>This version of Made by Fred is built with Jekyll and hosted on Github Pages. Previous, more elaborate, versions have run on Wordpress or were just hand coded from scratch. Since there's no blog or journal here right now, you might want to check out some of my archived blogs: <a href="http://madebyfred.wordpress.com">Made by Fred</a> or even older <a href="http://thedrawingfarm.blogspot.com">The Drawing Farm</a>.</p>
+	
+	<section class="profile">
+		<h2 class="section-title">Profile</h2>
+		<p>Creative Director and designer with many years of experience planning, designing, and building web sites. Fusing an educational background in communication studies and professional experience as a designer/developer, to provide a comprehensive profile as a web professional.</p>
+	</section>
+	
+	<section class="experience">
+		<h2 class="section-title">Experience</h2>
+		<ul>
+			<li>
+				<span class="date">2015-present</span>
+				<h3>Creative Director - <a class="company" href="http://vermontegov.com">Vermont Information Consortium</a></h3>
+				<p class="description">Creative Direction, web design and business planning for Vermont Information Consortium, a small web agency focussed on providing websites and online services for Vermont State Government.</p>
+			</li>
+			<li>
+				<span class="date">2011-2015</span>
+				<h3>Creative Services Project Manager - <a class="company" href="http://vermontegov.com">Vermont Information Consortium</a></h3>
+				<p class="description">Web design, front-end development and CMS administration/configuration for Vermont Information Consortium.</p>
+			</li>
+			<li>
+				<span class="date">2007-2011</span>
+				<h3>Freelance Web Designer/Developer - <a class="company" href="http://madebyfred.com">Made by Fred</a></h3>
+				<p class="description">Full stack Web design and development for my personal web agency.</p>
+			</li>
+		</ul>
+	</section>
+	
+	<secion class="portfolio">
+		<h2 class="section-title">Portfolio</h2>
+		<ul class="entries">
+			{% for post in site.posts %}
+ 
+		  <li>
+		    <a href="{{ post.url }}">
+			    <h3>{{ post.title }}</h3>
+		      <img src="{{ post.image }}" />
+					<p class="description">{{ post.description }}</p>
+		    </a>
+		  </li>
+		 
+		  {% endfor %}
+		</ul>
+	</secion>
+	
+	<section class="education">
+		<h2 class="section-title">Education</h2>
+		<ul class="entries">
+			<li><span class="date">1996-2000</span> Master of Communication Studies - <a href="http://vub.be">VUB</a></li>
+		</ul>
+	</section>
+
+	<section class="skills">
+		<h2 class="section-title">Skills</h2>
+		<ul class="entries">
+			<li>Web Design: Requirements gathering, solution proposals, wireframes, mockups, graphic components, etc.</li>
+			<li>Development: Standards based and section 508 compliant HTML and CSS(SASS), PHP, some Javascript.</li>
+			<li>Platforms and technologies: WordPress, Drupal, Jekyll, Symfony, etc. (Configuration, Theming and Administration)</li>
+			<li>Adobe Creative Suite: Photoshop, Illustrator, Fireworks, some Flash and Indesign</li>
+			<li>Various: Sketch, Git, LAMP, photography, logo design and branding.</li>
+		</ul>
+	</section>
 		<p>For more frequent updates, or if you want to get in touch, you can find me on Twitter.
 			<a href="https://twitter.com/{{ site.twitter_username }}">
 	              <span class="icon  icon--twitter">
