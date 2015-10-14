@@ -4,10 +4,27 @@ layout: default
 <div class="wrapper">
 	
 	<section class="profile">
-		<h2 class="section-title">Profile</h2>
+		<h2 class="section-title">Info</h2>
 		<p>Creative Director and designer with many years of experience planning, designing, and building web sites. Fusing an educational background in communication studies and professional experience as a designer/developer, to provide a comprehensive profile as a web professional.</p>
 	</section>
 	
+	<secion class="portfolio">
+		<h2 class="section-title">Portfolio</h2>
+		<ul class="entries">
+			{% for post in site.posts %}
+ 
+		  <li>
+		    <a href="{{ post.url }}">
+			    <h3>{{ post.title }}</h3>
+		      <img src="{{ post.image }}" />
+					<p class="description">{{ post.description }}</p>
+		    </a>
+		  </li>
+		 
+		  {% endfor %}
+		</ul>
+	</secion>
+
 	<section class="experience">
 		<h2 class="section-title">Experience</h2>
 		<ul>
@@ -28,24 +45,7 @@ layout: default
 			</li>
 		</ul>
 	</section>
-	
-	<secion class="portfolio">
-		<h2 class="section-title">Portfolio</h2>
-		<ul class="entries">
-			{% for post in site.posts %}
- 
-		  <li>
-		    <a href="{{ post.url }}">
-			    <h3>{{ post.title }}</h3>
-		      <img src="{{ post.image }}" />
-					<p class="description">{{ post.description }}</p>
-		    </a>
-		  </li>
-		 
-		  {% endfor %}
-		</ul>
-	</secion>
-	
+		
 	<section class="education">
 		<h2 class="section-title">Education</h2>
 		<ul class="entries">
@@ -63,6 +63,7 @@ layout: default
 			<li>Various: Sketch, Git, LAMP, photography, logo design and branding.</li>
 		</ul>
 	</section>
+<!--
 		<p>For more frequent updates, or if you want to get in touch, you can find me on Twitter.
 			<a href="https://twitter.com/{{ site.twitter_username }}">
 	              <span class="icon  icon--twitter">
@@ -75,8 +76,8 @@ layout: default
 	              <span class="username">{{ site.twitter_username }}</span>
 	            </a>
 		</p>
-	</section>
-<!--
+-->
+		
 	<section class="contact">
 		<p>For more frequent updates, or if you'd like to get in touch with me:</p>
 	  		<ul class="social-media-list">
@@ -111,5 +112,4 @@ layout: default
 	          {% endif %}
 	        </ul>
 	</section>
--->
 </div>
