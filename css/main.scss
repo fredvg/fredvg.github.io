@@ -205,7 +205,7 @@ section.portfolio {
 	ul {
 		@include outer-container;
 		li {
-			@include span-columns(4);
+			@include span-columns(6);
 			list-style: none;
 			a {
 				color: #000;
