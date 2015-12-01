@@ -1,19 +1,20 @@
 ---
-layout: home
+layout: default
 ---
 <!-- <div class="wrapper"> -->
 	
 	<section class="profile">
-		<h2 class="section-title">Info</h2>
-		<img src="images/fall2015_square.jpg" alt="profile picture"/>
-		<h3 class="name">Frederik Van Geloven <span>is a</span></h3>
-		<ul>
-			<li>designer</li><span>+</span>
-			<li>creative director</li>
-		</ul>
+		<h2 class="section-title">Frederik Van Geloven</h2>
+		<div class="info">
+			<img src="images/fall2015_square.jpg" alt="profile picture"/>
+			<p>is a</p>
+			<ul>
+				<li>designer</li><span>+</span>
+				<li>creative director</li>
+			</ul>
 	</section>
 	
-	<secion class="portfolio">
+	<section class="portfolio">
 		<h2 class="section-title">Portfolio</h2>
 		<ul class="entries">
 			{% for post in site.posts %}
@@ -28,7 +29,7 @@ layout: home
 		 
 		  {% endfor %}
 		</ul>
-	</secion>
+	</section>
 
 	<section class="experience">
 		<h2 class="section-title">Experience</h2>

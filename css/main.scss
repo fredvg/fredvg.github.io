@@ -55,19 +55,22 @@ $on-laptop:        800px;
 
 // MBF Custom Styles
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#bec0bb/* #cbccc8 */)) fixed;
+ 	background: -webkit-gradient(linear, left top, left bottom, from(#A5C9CC), to(/* #bec0bb */#cbccc8)) fixed;
 }
 a {
   color: $link-color;
   }
 header.site-header {
 	border: none;
-	background-color: #E2F2C3/* #A5C9CC */;
 	z-index: 10;
-/* 	background-color: #a2bdaf; */
-	padding: 3em 2em 0;
-	height: calc(100vh - 50px);
+	padding: 1em;
+	height: auto;
+	a img {
+		display: inline-block;
+		height: 30px;
+	}
 }
+/*
 .site-title {	
 	float: none;
 	font-family: "Bitter", serif;
@@ -104,29 +107,12 @@ header.site-header {
 	 	-o-transition: background-color 500ms ease-in;
 	 	transition: background-color 500ms ease-in;
 }
+*/
 .page-content {
 	padding: 0;
 	margin: 0;
 }
-div.home {
-	/* height: 100vh; */
-	
-	section {
-		position: relative;
-		color: $grey-color-light;
-		text-align: center;
-		width: 100%;
-		height: 50%;
-		z-index: 1;		
-		height: 60vh;
-		&.journal {
-			background-color: #a2b0bd;
-		}
-		&.project {
-			background-color: #bda2b0;
-		}
-	}
-}
+
 footer.site-footer {
 /* 	background-color: #a2bdaf; */
 	border: none;
@@ -174,56 +160,56 @@ footer.site-footer {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-.page-container {
-	}
-section {
+section, div.portfolio {
 	width: 100%;
 	padding: 2em;
 }
+h2.section-title {
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
 section.profile {
-	background-color: #51AC9D;
-	padding-top: 3em;
-	height: calc(100vh - 50px);
-	h2.section-title {
-		display: none;
+	float: left;
+	padding: 1em 0 2em;
+	.info {
+		max-width: 800px;
+		margin: 0 auto;
 	}
-	h3.name {
+	h2.section-title {
+		font-size: 5em;
+		font-weight: bold;
+		margin: 0 auto;
+		text-align: center;
+	}
+	p {
 		font-size: 2.5em;
-		margin-bottom: .25em;
-		span {
-			font-size: .5em;
-		}
 	}
 	ul {
-		font-size: 2em;
+		font-size: 3.5em;
 		list-style: none;
 		margin: 0;
 		line-height: 1em;
 	}
 	img {
 		float: left;
-		width: 25%;
+		width: 35%;
 		margin: 1em;
 		-webkit-shape-outside: circle();
 		shape-outside: circle();
 		border-radius: 50%;
 	}
 }
-
-/* Homepage */
-/*
-.about {
-	font-size: 1.5em;
+section.portfolio {
+	clear: both;
+	float: left;
+	ul {
+		@include outer-container;
+		li {
+			@include span-columns(4);
+			list-style: none;
+			a {
+				color: #000;
+			}
+		}
+	}
 }
-.intro {
-	font-size: 1.5em;
-	margin: 1.5em 0;
-}
-.contact {
-	background-color: #efefef;
-	width: 80%;
-	margin: 2em auto;
-	font-size: 1.2em;
-	padding: .5em;
-}
-*/
