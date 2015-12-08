@@ -4,22 +4,22 @@
 @charset "utf-8";
 
 //Import fonts
-@import url(http://fonts.googleapis.com/css?family=Questrial|Open+Sans:400,300,400italic|Bitter);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
 
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: "Open Sans", sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #041D3F;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
-$link-color: 	   #284d70;
+$link-color: 	   #1E5D7A/* #284d70 */;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -55,7 +55,8 @@ $on-laptop:        800px;
 
 // MBF Custom Styles
 body {
- 	background: -webkit-gradient(linear, left top, left bottom, from(#A5C9CC), to(/* #bec0bb */#cbccc8)) fixed;
+ 	background: -webkit-gradient(linear, left top, left bottom, from(/* #CDD7B6 *//* #c0e2ea */#A5C9CC), to(#bec0bb/* #cbccc8 */)) fixed;
+ 	color: $text-color;
 }
 a {
   color: $link-color;
@@ -167,33 +168,29 @@ section, div.portfolio {
 h2.section-title {
 	font-size: 1.5em;
 	text-transform: uppercase;
+	font-weight: 700;
 }
 section.profile {
-	float: left;
 	padding: 1em 0 2em;
 	.info {
-		max-width: 800px;
-		margin: 0 auto;
-	}
-	h2.section-title {
-		font-size: 5em;
-		font-weight: bold;
 		margin: 0 auto;
 		text-align: center;
 	}
-	p {
-		font-size: 2.5em;
-	}
-	ul {
-		font-size: 3.5em;
-		list-style: none;
-		margin: 0;
+	h2.section-title {
+		font-size: 4em;
+		font-weight: 700;
+		margin: 0 auto;
+		text-align: center;
 		line-height: 1em;
 	}
+	p {
+		font-size: 2em;
+		font-weight: 400;
+		}
 	img {
-		float: left;
-		width: 35%;
-		margin: 1em;
+		display: inline-block;
+		width: 20%;
+		margin: 0;
 		-webkit-shape-outside: circle();
 		shape-outside: circle();
 		border-radius: 50%;
@@ -208,7 +205,7 @@ section.portfolio {
 			@include span-columns(6);
 			list-style: none;
 			a {
-				color: #000;
+// 				color: #000;
 			}
 		}
 	}
