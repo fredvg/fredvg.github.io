@@ -6,10 +6,24 @@
 //Import fonts
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
 
+@font-face {
+    font-family: 'knileregular';
+    src: url('/fonts/knile-regular-webfont.eot');
+    src: url('/fonts/knile-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/knile-regular-webfont.woff2') format('woff2'),
+         url('/fonts/knile-regular-webfont.woff') format('woff'),
+         url('/fonts/knile-regular-webfont.ttf') format('truetype'),
+         url('/fonts/knile-regular-webfont.svg#knileregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 
 // Our variables
-$base-font-family: "Open Sans", sans-serif;
+$base-font-family: "knileregular", sans-serif;
+$heading-font: "Open Sans", serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -19,8 +33,9 @@ $spacing-unit:     30px;
 $text-color:       #041D3F;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
-$link-color: 	   #1E5D7A/* #284d70 */;
+$link-color:  	   #1E5D7A/* #284d70 */;
 
+$dark-blue:        #041D3F;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
@@ -62,6 +77,7 @@ a {
   color: $link-color;
   }
 header.site-header {
+  font-family: $heading-font;
 	border: none;
 	z-index: 10;
 	padding: 1em;
@@ -71,6 +87,14 @@ header.site-header {
 		height: 30px;
 	}
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+}
+h2 {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
 /*
 .site-title {	
 	float: none;
@@ -112,6 +136,9 @@ header.site-header {
 .page-content {
 	padding: 0;
 	margin: 0;
+}
+.post-title {
+  letter-spacing: .01em;
 }
 
 footer.site-footer {
@@ -161,52 +188,164 @@ footer.site-footer {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-section, div.portfolio {
+section {
 	width: 100%;
 	padding: 2em;
 }
+
+div.portfolio {
+  p {
+    font-size: 1.5em;
+		font-weight: 400;
+    margin: 2em auto;
+		text-align: center;
+		padding: 0 1em;
+  }
+}
+
+h2.page-title {
+  font-family: $heading-font;
+  font-size: 4em;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1em;
+}
 h2.section-title {
 	font-size: 1.5em;
-	text-transform: uppercase;
-	font-weight: 700;
 }
-section.profile {
+section#profile {
 	padding: 1em 0 2em;
 	.info {
 		margin: 0 auto;
 		text-align: center;
 	}
-	h2.section-title {
-		font-size: 4em;
-		font-weight: 800;
-		margin: 0 auto;
-		text-align: center;
-		line-height: 1em;
-	}
 	p {
 		font-size: 2em;
 		font-weight: 400;
+		margin: 0;
 		}
 	img {
 		display: inline-block;
 		width: 20%;
-		margin: 0;
+    margin: 1em 0 0;
 		-webkit-shape-outside: circle();
 		shape-outside: circle();
 		border-radius: 50%;
 	}
+	/*typing animation */
+  p.type {
+  font-size: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  margin: 0 auto;
+  animation: type 8s steps(40, end);
+  }
 }
-section.portfolio {
+@keyframes type {
+  0%{width: 0;}
+  30%{width: 0;}
+  100%{ width: 100;} 
+} 
+
+section#portfolio, section#experience, section#education, section#skills, section#personal {
 	clear: both;
 	float: left;
 	ul {
 		@include outer-container;
+		margin-left: 0;
 		li {
-			@include span-columns(6);
 			list-style: none;
 			a {
 // 				color: #000;
 			}
 		}
 	}
+}
+section#portfolio {
+  ul {
+		@include outer-container;
+		li {
+      @include span-columns(6);
+      @include omega(2n);
+      margin-bottom: 1.5em; 
+    }
+  }
+  a {
+      color: $grey-color-light;
+      a:hover {
+      color: $grey-color-light;
+      }
+    }
+  h3 {
+    text-transform: uppercase;
+    margin: 0;
+    padding: .25em;
+    background-color: rgba(37, 83, 99, .6);
+  }
+  img {
+    z-index: 10;
+  }
+}
+div.portfolio {
+  h2.content {
+    font-size: 2em;
+		font-weight: 800;
+		margin: 0 auto 1em;
+		text-align: center;
+		line-height: 1em;
+  }
+  .main-image {
+    display: block;
+    width:100%;
+  }
+}
+#feature1 {
+  float: left;
+  width: 100%;
+  padding: 0;
+  background-color: #255363;
+  color: #DAE2E3;
+  //color: $grey-color-light;
+  font-size: .85em;
+  img, div {
+    @include span-columns(6);
+  }
+}
+#feature2 {
+  float: left;
+  padding: 0;
+  img {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+  div {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1em;
+    @include span-columns(12);
+  }
+}
+.post-navigation {
+  @include span-columns(12);
+  background-color: #DAE2E3;
+  a, span {
+    @include span-columns(4, collapse);
+    color: $background-color;
+    text-align: center;
+    padding: .5em;
+    font-size: 1.2em;    
+  }
+  a.prev {
+    float: left;
+    background-color: #56787A;
+  }
+  a.overview {
+    background-color: #A5C9CC;
+  }
+  a.next {
+    float: right;
+    background-color: #255363;
+  }
 }

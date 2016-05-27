@@ -2,9 +2,30 @@
 layout: default
 ---
 <div class="portfolio">
-	<h2 class="content">{{page.title}}</h2>
- 
-	<img src="{{ page.image }}" />
- 
-	{{ content }}
+	<h2 class="content post-title">{{page.title}}</h2>
+	<img src="{{ page.banner_image }}" class="main-image" alt="{{ page.title }} banner image"/>
+  {{ content }}
+	<section id="feature1">
+  	<img src="{{ page.feature1_image }}" class="feature1-image" />
+    <div>
+      {{page.feature1_description}}
+    </div>
+	</section>
+ 	<section id="feature2">
+   	<div>
+      {{page.feature2_description}}
+    </div>
+  	<img src="{{ page.feature2_image }}" class="feature2-image" />
+	</section>
 </div>
+<nav class="post-navigation">
+  {% if page.previous.url %}
+    <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+  {% else %}
+    <span class="prev">&nbsp;</span>
+  {% endif %}
+    <a class="overview" href="/#portfolio">&raquo; Porfolio &laquo;</a>
+  {% if page.next.url %}
+    <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+  {% endif %}
+</nav>
