@@ -70,7 +70,7 @@ $on-laptop:        800px;
 
 // MBF Custom Styles
 body {
- 	background: -webkit-gradient(linear, left top, left bottom, from(/* #CDD7B6 *//* #c0e2ea */#A5C9CC), to(#bec0bb/* #cbccc8 */)) fixed;
+ 	background: linear-gradient(to right bottom, #D2E4E6/* #A5C9CC */, #EEEFED 30%, #bec0bb 95%);
  	color: $text-color;
 }
 a {
@@ -268,7 +268,10 @@ section#portfolio {
 		li {
       @include span-columns(6);
       @include omega(2n);
-      margin-bottom: 1.5em; 
+      margin-bottom: 1.5em;
+      img {
+        width: 100%;
+      }
     }
   }
   a {
@@ -281,7 +284,7 @@ section#portfolio {
     text-transform: uppercase;
     margin: 0;
     padding: .25em;
-    background-color: rgba(37, 83, 99, .6);
+    background-color: $dark-blue;  
   }
   img {
     z-index: 10;
@@ -330,22 +333,34 @@ div.portfolio {
 .post-navigation {
   @include span-columns(12);
   background-color: #DAE2E3;
-  a, span {
+  ul {
+    margin: 0;
+    height: 4em;
+  }
+  li {
+    display: inline-block;
     @include span-columns(4, collapse);
     color: $background-color;
     text-align: center;
-    padding: .5em;
-    font-size: 1.2em;    
+    padding: 1em .5em;
+    font-size: 1.2em;
+    list-style: none;
+    height: 100%;   
   }
-  a.prev {
-    float: left;
+  a {
+    display: inline-block;
+    color: $background-color;
+    vertical-align: middle;
+  }
+  li.prev {
+//     float: left;
     background-color: #56787A;
   }
-  a.overview {
+  li.overview {
     background-color: #A5C9CC;
   }
-  a.next {
-    float: right;
+  li.next {
+//     float: right;
     background-color: #255363;
   }
 }
