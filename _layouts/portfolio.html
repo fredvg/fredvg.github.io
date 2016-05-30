@@ -26,14 +26,14 @@
       </div>
       <nav class="post-navigation">
         <ul>
-        {% if page.previous.url %}
-         <li class="prev"><a class="post-nav" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a></li>
+        {% if page.next.url %}
+         <li class="prev"><a class="post-nav" href="{{page.next.url}}">&laquo; {{page.next.title}}</a></li>
         {% else %}
           <li class="prev">&nbsp;</li>
         {% endif %}
         <li class="overview"><a class="post-nav" href="/#portfolio">&raquo; Porfolio&nbsp;&laquo;</a></li>
-        {% if page.next.url %}
-        <li class="next"><a class="post-nav" href="{{page.next.url}}">{{page.next.title}}&nbsp;&raquo;</a></li>
+        {% if page.previous.url %}
+        <li class="next"><a class="post-nav" href="{{page.previous.url}}">{{page.previous.title}}&nbsp;&raquo;</a></li>
         {% else %}
           <li class="next">&nbsp;</li>
         {% endif %}
