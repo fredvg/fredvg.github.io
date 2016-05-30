@@ -190,7 +190,7 @@ footer.site-footer {
 }
 section {
 	width: 100%;
-	padding: 2em;
+	padding: 1em 2em;
 }
 
 div.portfolio {
@@ -237,7 +237,7 @@ section#profile {
   font-size: 1.5em;
   white-space: nowrap;
   overflow: hidden;
-  width: 30em;
+  width: 24em;
   margin: 0 auto;
   animation: type 8s steps(40, end);
   }
@@ -248,23 +248,30 @@ section#profile {
   100%{ width: 100;} 
 } 
 
-section#portfolio, section#experience, section#education, section#skills, section#personal {
-	clear: both;
-	float: left;
+section#portfolio, section#experience, section#education, section#skills, section#personal, section#contact {
+  @include outer-container; 
+  margin-left: auto;
+  margin-right: auto;
 	ul {
-		@include outer-container;
 		margin-left: 0;
 		li {
 			list-style: none;
-			a {
-// 				color: #000;
-			}
 		}
 	}
 }
+section#experience, section#education, section#skills, section#personal, section#contact {
+  h3 {
+    margin: .25em 0;
+  }
+	ul {
+		li {
+      margin-bottom: .5em;
+		}
+  }
+}
 section#portfolio {
   ul {
-		@include outer-container;
+// 		@include outer-container;
 		li {
       @include span-columns(6);
       @include omega(2n);
@@ -282,9 +289,10 @@ section#portfolio {
     }
   h3 {
     text-transform: uppercase;
+    font-size: 1em;
     margin: 0;
-    padding: .25em;
-    background-color: $dark-blue;  
+    padding: .25em .5em;
+    background-color: $dark-blue;
   }
   img {
     z-index: 10;
@@ -333,19 +341,18 @@ div.portfolio {
 .post-navigation {
   @include span-columns(12);
   background-color: #DAE2E3;
+  font-size: 1.2em;
   ul {
     margin: 0;
     height: 4em;
-  }
-  li {
-    display: inline-block;
-    @include span-columns(4, collapse);
-    color: $background-color;
-    text-align: center;
-    padding: 1em .5em;
-    font-size: 1.2em;
-    list-style: none;
-    height: 100%;   
+    li {
+      display: inline-block;
+      color: $background-color;
+      text-align: center;
+      padding: 1em .5em;
+      list-style: none;
+      height: 100%;   
+    }
   }
   a {
     display: inline-block;
@@ -353,14 +360,107 @@ div.portfolio {
     vertical-align: middle;
   }
   li.prev {
-//     float: left;
+    @include span-columns(5, collapse);
     background-color: #56787A;
   }
   li.overview {
+    @include span-columns(2, collapse);
     background-color: #A5C9CC;
   }
   li.next {
-//     float: right;
+    @include span-columns(5, collapse);
     background-color: #255363;
   }
+}
+@media (max-width: 1200px) {
+  div.portfolio {
+    p {
+      font-size: 1.2em;
+    }
+  }
+  .post-navigation {
+    font-size: 1em;
+    ul {
+      li {
+        padding: 1em .25em;    
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  div.portfolio {
+    p {
+      font-size: 1em;
+      margin: 1.2em auto;
+    }
+  }
+  .post-navigation {
+    font-size: .9em;
+  }  
+}
+@media (max-width: 800px) {
+  h2.page-title {
+    font-size: 3em;
+  }
+  section#profile p {
+    font-size: 1.5em;
+    &.type {
+      font-size: 1.2em;
+    }
+  }
+  section#portfolio {
+    h3 {
+      font-size: .8em;
+    }
+  }
+  section#experience, section#education {
+    h3 {
+      font-size: 1em;
+    }
+  }
+  div.portfolio {
+    p {
+      font-size: .9em;
+    }
+    h2.content {
+      font-size: 1.5em;
+    }
+    #feature1 {
+      p {
+        margin: .3em;
+      }
+    }
+    #feature2 div {
+      font-size: 1.2em;
+    }
+  } 
+  .post-navigation {
+    font-size: .8em;
+  }  
+} 
+@media (max-width: 600px) { 
+  section#portfolio {
+    ul li {
+      @include span-columns(12); 
+    }
+  }
+  div.portfolio {
+    p {
+      font-size: 1em;
+    }
+    h2.content {
+      font-size: 1em;
+    }
+    #feature1 {
+      img, div {
+        @include span-columns(12);
+      }
+      p {
+        margin: .75em;
+      }
+    }
+  }
+  .post-navigation {
+    font-size: .7em;
+  }    
 }
