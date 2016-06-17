@@ -4,6 +4,8 @@
 @charset "utf-8";
 
 //Import fonts
+
+// @import 'https://fonts.googleapis.com/css?family=Domine|Montserrat:700';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
 
 @font-face {
@@ -16,14 +18,12 @@
          url('/fonts/knile-regular-webfont.svg#knileregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
-
 // Our variables
-$base-font-family: "knileregular", sans-serif;
-$heading-font: "Open Sans", serif;
+$base-font-family: 'knileregular', serif;
+$heading-font: 'Open Sans', sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
