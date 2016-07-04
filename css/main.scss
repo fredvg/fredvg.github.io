@@ -125,13 +125,14 @@ h2.section-title {
 }
 
 section#profile {
-	padding: 1em 0 2em;
+// 	padding: 1em 0 2em;
 	@include outer-container;
+  margin-bottom: 2em;
   h2.page-title {
     @include span-columns(9);
     @include shift(.5);
     font-family: $heading-font;
-    font-size: 4em;
+    font-size: 3.5em;
     line-height: 1em;
 //     margin-top: .2em;
     margin-bottom: .2em;
@@ -177,7 +178,7 @@ section#portfolio, section#experience, section#education, section#skills, sectio
   margin-left: auto;
   margin-right: auto;
 	ul {
-		margin-left: 0;
+		margin: 0;
 		li {
 			list-style: none;
 		}
@@ -194,11 +195,19 @@ section#experience, section#education, section#skills, section#personal, section
   }
 }
 section#portfolio {
+
+  h2 {
+    @include span-columns(4);
+    @include omega;
+    font-size: 2em;
+    padding: 0;
+    line-height: .75em;
+    color: $dark-blue;  }
   ul {
-// 		@include outer-container;
+    @include outer-container;
 		li {
-      @include span-columns(6);
-      @include omega(2n);
+      @include span-columns(4);
+      @include omega;
       margin-bottom: 1.5em;
       img {
         width: 100%;
@@ -214,6 +223,7 @@ section#portfolio {
   h3 {
     text-transform: uppercase;
     font-size: 1em;
+    height: 4em;
     margin: 0;
     padding: .25em .5em;
     background-color: $dark-blue;
