@@ -197,20 +197,26 @@ section#experience, section#education, section#skills, section#personal, section
 section#portfolio {
 
   h2 {
-    @include span-columns(4);
-    @include omega;
+    display: none;
+//     @include span-columns(4);
     font-size: 2em;
     padding: 0;
     line-height: .75em;
-    color: $dark-blue;  }
+    color: $dark-blue;  
+//     margin-bottom: 1em;
+    }
   ul {
     @include outer-container;
 		li {
       @include span-columns(4);
-      @include omega;
-      margin-bottom: 1.5em;
+      @include omega(3n);
+      margin-top: 2.5em;
+      background-color: $background-color;
       img {
-        width: 100%;
+        display: block;
+        width: 90%;
+        margin: -1em auto 0;
+        box-shadow: 0 2px 3px rgba(0,0,0,0.19), 0 2px 3px rgba(0,0,0,0.23);
       }
     }
   }
@@ -223,11 +229,12 @@ section#portfolio {
   h3 {
     text-transform: uppercase;
     font-size: 1em;
-    height: 4em;
-    margin: 0;
+    margin: .5em 0;
     padding: .25em .5em;
-    background-color: $dark-blue;
-  }
+    color: $dark-blue;
+    text-align: center;
+    height: 3em;
+      }
   img {
     z-index: 10;
   }
@@ -397,4 +404,19 @@ div.portfolio {
   .post-navigation {
     font-size: .7em;
   }    
+}
+
+/* TEST NEAT */
+div.test {
+  @include outer-container;
+  height: 800px;
+  max-width: 1200px;
+  margin: 0 auto;
+  div {
+    @include span-columns(3);
+    @include omega(4n);
+    background-color: $background-color;
+    margin-bottom: 1em;
+  }
+  
 }
