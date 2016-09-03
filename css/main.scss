@@ -414,16 +414,16 @@ div.portfolio {
     list-style: none;
 }
 
-.timeline:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 40px;
-    width: 2px;
-    margin-left: -1.5px;
-    background-color: #f1f1f1;
-}
+// .timeline:before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 40px;
+//     width: 2px;
+//     margin-left: -1.5px;
+//     background-color: #f1f1f1;
+// }
 
 .timeline>li {
     position: relative;
@@ -538,7 +538,7 @@ div.portfolio {
     }
 
     .timeline>li .timeline-image {
-        left: 50%;
+        left: 75%;
         width: 100px;
         height: 100px;
         margin-left: -50px;
@@ -614,10 +614,15 @@ div.portfolio {
   max-width: 1200px;
   margin: 0 auto;
   .timeline-panel {
-    @include span-columns(5);
+    @include span-columns(8);
   }
-  .timeline-inverted .timeline-panel {
-    @include span-columns(5);
-    @include shift(7);
+  .timeline>li.timeline-inverted .timeline-image {
+    left:25%;
+    }
+  .timeline-inverted {
+    .timeline-panel {
+      @include span-columns(8);
+      @include shift(4);
+    }
   }
 }
