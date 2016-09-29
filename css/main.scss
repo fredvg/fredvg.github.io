@@ -43,7 +43,11 @@ $grey-color-dark:  darken($grey-color, 25%);
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+$size-xs: 480px;
+$size-s: 768px;
+$size-m: 960px;
+$size-l: 1200px;
+$size-xl: 1400px;
 
 // Using media queries with like this:
 // @include media-query($palm) {
@@ -92,6 +96,9 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   font-weight: 800;
   text-transform: uppercase;
+}
+h3, h4 {
+  font-weight: 400;
 }
 .img-circle {
   border-radius:50%;
@@ -151,22 +158,17 @@ section#profile {
 	img {
     @include span-columns(2);
 		display: inline-block;
-// 		width: 20%;
-//     margin: 1em 0 0;
-/*
-		-webkit-shape-outside: circle();
-		shape-outside: circle();
-*/
 		border-radius: 50%;
 	}
 	/*typing animation */
   p.type {
-  font-size: 1.5em;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 24em;
-//   margin: 0 auto;
-  animation: type 8s steps(40, end);
+    font-family: monospace;
+    font-size: 1.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 14em;
+    margin: 0 auto;
+    animation: type 8s steps(38, end);
   }
 }
 @keyframes type {
@@ -175,7 +177,7 @@ section#profile {
   100%{ width: 100;}
 }
 
-section#portfolio, section#experience, section#education, section#skills, section#personal, section#contact {
+section#portfolio, section#experience, section#education, section#skills, section#personal, section#contact, section#whats-next {
   @include outer-container;
   margin-left: auto;
   margin-right: auto;
@@ -186,7 +188,7 @@ section#portfolio, section#experience, section#education, section#skills, sectio
 		}
 	}
 }
-section#experience, section#education, section#skills, section#personal, section#contact {
+section#experience, section#education, section#personal, section#contact,section#whats-next {
   h3 {
     margin: .25em 0;
   }
@@ -345,12 +347,6 @@ div.portfolio {
   h2.page-title {
     font-size: 3em;
   }
-  section#profile p {
-    font-size: 1.5em;
-    &.type {
-      font-size: 1.2em;
-    }
-  }
   section#portfolio {
     h3 {
       font-size: .8em;
@@ -407,6 +403,100 @@ div.portfolio {
     font-size: .7em;
   }
 }
+/* NAVBAR */
+
+.navbar-default {
+    border-color: transparent;
+    background-color: #222;
+}
+
+.navbar-default .navbar-brand {
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: $text-color;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #000;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: $text-color;
+    background-color: $text-color;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: $text-color;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: $text-color;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: $text-color;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: $text-color;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 25px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: #222;
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+
 /* SKILLS SECTION */
 .timeline {
     position: relative;
@@ -428,7 +518,7 @@ div.portfolio {
 .timeline>li {
     position: relative;
     margin-bottom: 50px;
-    min-height: 50px;
+    min-height: 170px;
 }
 
 .timeline>li:before,
@@ -467,8 +557,8 @@ div.portfolio {
     z-index: 100;
     position: absolute;
     left: 0;
-    width: 80px;
-    height: 80px;
+    width: 240px;
+    height: 240px;
     margin-left: 0;
     border: 7px solid #f1f1f1;
     border-radius: 100%;
@@ -607,7 +697,6 @@ div.portfolio {
     }
 }
 
-
 /* TEST NEAT */
 #skills {
   @include outer-container;
@@ -623,6 +712,171 @@ div.portfolio {
     .timeline-panel {
       @include span-columns(8);
       @include shift(4);
+    }
+  }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: $size-xl) {
+  section#profile {
+    h2.page-title {
+      @include span-columns(9);
+      font-size: 3.2em;
+    }
+    p {
+      font-size: 2em;
+      &.type {
+        font-size: 1.5em;
+        width: 14em;
+        margin-left: 0;
+      }
+    }
+  }
+  }
+@media screen and (max-width: $size-l) {
+  section#profile {
+    h2.page-title {
+      @include span-columns(9);
+      font-size: 2.8em;
+    }
+    p {
+      font-size: 1.8em;
+      &.type {
+        font-size: 1.5em;
+        width: 14em;
+        margin-left: 0;
+      }
+    }
+  }
+  // #skills {
+  //   .timeline-inverted {
+  //     .timeline-panel {
+  //       @include span-columns(8);
+  //       @include shift(4);
+  //     }
+  //   }
+  // }
+}
+
+@media screen and (max-width: $size-m) {
+  section#profile {
+    h2.page-title {
+      @include span-columns(8);
+      font-size: 2.3em;
+    }
+    p {
+      font-size: 1.5em;
+      &.type {
+        font-size: 1.2em;
+        width: 14em;
+        margin-left: 0;
+      }
+    }
+  }
+  // #skills {
+  //   .timeline-inverted {
+  //     .timeline-panel {
+  //       width: 82.94039%;
+  //       margin-left: 17.05961%;
+  //     }
+  //   }
+  // }
+}
+@media screen and (max-width: $size-s) {
+  section#profile {
+    h2.page-title {
+      @include span-columns(7);
+      @include shift(.5);
+      // font-size: 2.3em;
+    }
+    p {
+      font-size: 1.1em;
+      &.type {
+        font-size: 1em;
+        width: 14em;
+        margin-left: 0;
+      }
+    }
+    .info {
+      @include span-columns(7);
+      @include shift(.5);
+    }
+    img {
+      @include span-columns(3);
+      max-width: 120px;
+      max-height: 120px;
+    }
+  }
+  #skills {
+    @include outer-container;
+    .timeline-panel {
+      @include span-columns(10);
+      @include shift(2);
+    }
+    .timeline > li .timeline-image {
+      width: 160px;
+      height: 160px;
+    }
+    .timeline > li .timeline-panel {
+      padding: 10px;
+    }
+    .timeline>li .timeline-panel {
+        padding: 0 10px 10px 100px;
+    }
+    .timeline-inverted {
+      .timeline-panel {
+        @include span-columns(10);
+        @include shift(2);
+      }
+    }
+    .timeline>li.timeline-inverted .timeline-image {
+      left:0;
+    }
+  }
+}
+
+@media screen and (max-width: $size-xs) {
+  section#profile {
+    img {
+      display: block;
+      float: none;
+      width: 8em;
+      margin: 0 auto 1em;
+    }
+    h2.page-title {
+      font-size: 2em;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .info {
+      float: none;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    p.type {
+      margin-left: auto;
+    }
+  }
+  #skills {
+    .timeline-panel {
+      @include span-columns(12);
+      @include shift(0);
+    }
+    .timeline > li .timeline-panel {
+      padding: 10px;
+    }
+    .timeline>li.timeline-inverted .timeline-image {
+      left:0;
+    }
+    .timeline>li.timeline-inverted>.timeline-panel {
+        @include span-columns(12);
+        @include shift(0);
+    }
+    .timeline > li .timeline-image {
+      position: relative;
+      margin: 0 auto;
     }
   }
 }
