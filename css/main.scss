@@ -274,6 +274,7 @@ div.portfolio {
 h2.section-title {
 	font-size: 2.5em;
   border-bottom: 1px solid $text-color;
+  padding-bottom: .25em;
 }
 div.intro div {
   @include span-columns(12);
