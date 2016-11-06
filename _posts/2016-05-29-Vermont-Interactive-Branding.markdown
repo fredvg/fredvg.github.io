@@ -3,6 +3,7 @@ layout: portfolio
 title:  "Vermont Interactive Branding"
 date:   2016-05-23 21:05:27
 categories: portfolio "branding"
+modal-id: 1
 portfolio_color: "#C3CCB9"
 image: /images/portfolio/Branding_Thumb@2x.jpg
 banner_image: /images/portfolio/Branding_Banner@2x.jpg

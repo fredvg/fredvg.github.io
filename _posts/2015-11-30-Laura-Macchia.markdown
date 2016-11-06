@@ -3,6 +3,7 @@ layout: portfolio
 title:  "Laura Macchia"
 date:   2015-11-30 21:05:27
 categories: portfolio "web design"
+modal-id: 4
 portfolio_color: "#E1EADE"
 image: /images/portfolio/LM_Full@2x.jpg
 banner_image: /images/portfolio/LM_Banner@2x.jpg

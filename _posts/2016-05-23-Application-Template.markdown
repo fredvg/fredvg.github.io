@@ -3,6 +3,7 @@ layout: portfolio
 title:  "State of Vermont Online Services"
 date:   2016-05-23 21:05:27
 categories: portfolio "web design"
+modal-id: 2
 portfolio_color: "#DCDCC3"
 image: /images/portfolio/AT_Thumb@2x.jpg
 banner_image: /images/portfolio/AT_Banner@2x.jpg
