@@ -194,13 +194,13 @@ section {
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: $text-color;
-    background-color: $blue-grey-light;
+    background-color: $background-color;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: $brand-color;
-    background-color: $blue-grey-light;
+    background-color: darken($background-color, 3%);
 }
 
 @media(min-width:768px) {
