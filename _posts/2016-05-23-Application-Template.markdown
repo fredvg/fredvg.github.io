@@ -5,7 +5,7 @@ date:   2016-05-23 21:05:27
 categories: portfolio "web design"
 modal-id: 2
 portfolio_color: "#DCDCC3"
-image: /images/portfolio/AT_Thumb@2x.jpg
+image: /images/portfolio/FEF/FEF_Thumb.png
 banner_image: /images/portfolio/AT_Banner@2x.jpg
 feature1_image: /images/portfolio/AT_Phone@2x.jpg
 feature1_description: "<p>Instead of native applications we try to make our web services mobile-first browser based applications. This allows for seamless transition between media and leaves us with more control over the experience. No app store rules to worry about or delays when pushing out updates.</p>"

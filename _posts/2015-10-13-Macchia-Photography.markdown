@@ -5,7 +5,7 @@ date:   2015-10-14 22:05:27
 categories: portfolio "web design"
 modal-id: 5
 portfolio_color: "#ffffff"
-image: /images/portfolio/AKM_Full.jpg
+image: /images/portfolio/AKM_Thumb.png
 banner_image: /images/portfolio/AKM_banner.jpg
 feature1_image: /images/portfolio/AKM_Full_Thumb.jpg
 feature2_image: /images/portfolio/AKM_menu.jpg

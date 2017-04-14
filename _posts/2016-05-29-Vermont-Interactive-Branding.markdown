@@ -5,7 +5,7 @@ date:   2016-05-23 21:05:27
 categories: portfolio "branding"
 modal-id: 1
 portfolio_color: "#C3CCB9"
-image: /images/portfolio/Branding_Thumb@2x.jpg
+image: /images/portfolio/VIC/VIC_Thumb.png
 banner_image: /images/portfolio/Branding_Banner@2x.jpg
 feature1_image: /images/portfolio/Branding_Web@2x.jpg
 feature1_description: "<p>A new brand requires a new website. While this will mostly be an aesthetic redesign, we'll also incorporate a new Drupal 8 powered 'applications library'. A custom Content Type, with Views and Taxonomies will allow us to dynamically display our entire&nbsp;portfolio.</p>"

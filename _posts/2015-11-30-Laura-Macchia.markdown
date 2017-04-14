@@ -5,7 +5,7 @@ date:   2015-11-30 21:05:27
 categories: portfolio "web design"
 modal-id: 4
 portfolio_color: "#E1EADE"
-image: /images/portfolio/LM_Full@2x.jpg
+image: /images/portfolio/LM/LM_Thumb.png
 banner_image: /images/portfolio/LM_Banner@2x.jpg
 feature1_image: /images/portfolio/LM_portfolio.jpg
 feature1_description: "<p>The portfolio is dominated by large images that really make Laura's work shine. 'Sharing Buttons' give clients and easy way to bookmark or share. The design of the website is kept simple and clean in an effort not to detract from Laura's work.</p>"

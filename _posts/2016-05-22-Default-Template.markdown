@@ -5,7 +5,7 @@ date:   2016-05-22 21:05:27
 categories: portfolio "web design"
 modal-id: 3
 portfolio_color: "#C0CDC0"
-image: /images/portfolio/DT_Thumb@2x.jpg
+image: /images/portfolio/CMS/CMS_Thumb.png
 banner_image: /images/portfolio/DT_Banner@2x.jpg
 feature1_image: /images/portfolio/DT_widgets.jpg
 feature1_description: "<p>Many different types of link widgets are provided to ensure maximum flexibility.</p><p>Icon widgets are powered by a custom Drupal Content Type and the FontAwesome web font. This gives site owners complete control. Using an icon font also enables easy integration of the chosen color palette.</p>"
