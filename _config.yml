@@ -1,9 +1,9 @@
 # Site settings
-title: 	Frederik Van Geloven - UX Designer + Creative Director
+title: Frederik Van Geloven - UX Designer
 email: fred@madebyfred.com
-description: Frederik Van Geloven online resume
+description: Frederik Van Geloven Portfolio
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://fredvg.github.io" # the base hostname & protocol for your site
+url: "http://fredvg.com" # the base hostname & protocol for your site
 twitter_username: frederikvg
 github_username:  fredvg
 linkedin_url: https://www.linkedin.com/in/fredvg/
