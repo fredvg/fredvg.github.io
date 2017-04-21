@@ -714,7 +714,7 @@ div.portfolio {
     margin-bottom: 0;
 }
 
-@media(min-width:768px) {
+@media(min-width:770px) {
     .timeline:before {
         left: 50%;
     }
@@ -733,8 +733,8 @@ div.portfolio {
 
     .timeline>li .timeline-image {
         left: 75%;
-        width: 100px;
-        height: 100px;
+        width: 160px;
+        height: 160px;
         margin-left: -50px;
     }
 
@@ -746,7 +746,7 @@ div.portfolio {
 
     .timeline>li.timeline-inverted>.timeline-panel {
         float: right;
-        padding: 0 30px 20px 20px;
+        padding: 0 30px 20px 50px;
         text-align: left;
     }
 }
@@ -932,7 +932,7 @@ div.portfolio {
       padding: 10px;
     }
     .timeline>li .timeline-panel {
-        padding: 0 10px 10px 100px;
+      padding: 0 10px 10px 100px;
     }
     .timeline-inverted {
       .timeline-panel {
@@ -940,8 +940,8 @@ div.portfolio {
         @include shift(2);
       }
     }
-    .timeline>li.timeline-inverted .timeline-image {
-      left:0;
+    .timeline > li.timeline-inverted .timeline-image {
+      left: 0;
     }
   }
 }
