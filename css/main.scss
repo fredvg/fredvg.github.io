@@ -342,7 +342,7 @@ section#profile {
 //   100%{ width: 100;}
 // }
 
-section#portfolio, section#experience, section#education, section#skills, section#personal, section#contact, section#whats-next {
+section#portfolio, section#experience, section#education, section#skills, section#personal, section#contact, section#whats-next, section#about {
   @include outer-container;
   margin-left: auto;
   margin-right: auto;
@@ -353,7 +353,7 @@ section#portfolio, section#experience, section#education, section#skills, sectio
 		}
 	}
 }
-section#experience, section#education, section#personal, section#contact,section#whats-next {
+section#experience, section#education, section#personal, section#contact,section#whats-next, section#about {
   max-width: 768px;
   margin-left: auto;
   margin-right: auto;
@@ -368,6 +368,15 @@ section#experience, section#education, section#personal, section#contact,section
 }
 .modal-body {
   margin-top: 50px;
+}
+section#about {
+  @include outer-container;
+  .first-column {
+    @include span-columns(8);
+  }
+  .second-column {
+    @include span-columns(4);
+  }
 }
 section#portfolio {
   ul {
