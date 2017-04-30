@@ -377,6 +377,16 @@ section#about {
   .second-column {
     @include span-columns(4);
   }
+  @media(max-width:$size-s) {
+      .first-column,.second-column {
+        @include span-columns(6);
+      }
+    }
+    @media(max-width:$size-xs) {
+        .first-column,.second-column {
+          @include span-columns(12);
+        }
+      }
 }
 section#portfolio {
   ul {
