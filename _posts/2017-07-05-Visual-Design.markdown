@@ -2,7 +2,7 @@
 layout: portfolio
 date:   2017-07-05 22:03:28
 categories: portfolio "branding" "visual design"
-modal-id: 8
+modal-id: 7
 
 title:  "Visual Design"
 main_image: /images/portfolio/VIC/VIC_Thumb.png
