@@ -10,17 +10,15 @@
       </div>
       <div class="container">
         <div class="modal-body">
-          <section id="row-1">
-            <div class="col-1">
-              <img src="{{ post.main_image }}" alt="{{ post.main_image_alt }}" class="main-image"/>
-            </div>
-            <div class="col-2">
-              <h2>{{ post.title }}</h2>
-              <div id="description">
-                <h3>{{ post.problem_title }}</h3>
-                <p>{{ post.problem_description }}</p>
-              </div>
-            </div>
+          <h2>{{ post.title }}</h2>
+            <section id="row-1">
+                <div class="col-1">
+                  <h3>{{ post.problem_title }}</h3>
+                <!-- <img src="{{ post.main_image }}" alt="{{ post.main_image_alt }}" class="main-image"/> -->
+                </div>
+                <div class="col-2">
+                  {{ post.problem_description }}
+                </div>
             <div class="col-3">
               <div id="challenges">
                 <h3>{{ post.challenges_title }}</h3>
@@ -44,7 +42,7 @@
               <h3 class="phase2-title">{{ post.phase2_title }}</h3>
             </div>
             <div class="col-2">
-              <p class="phase2-description">{{ post.phase1_description }}</p>
+              <p class="phase2-description">{{ post.phase2_description }}</p>
             </div>
             <div class="col-3">
               <img src="{{ post.phase2_image }}" alt="{{ post.phase2_image_alt }}" class="phase2-image"/>
@@ -60,6 +58,10 @@
             <div class="col-3">
               <img src="{{ post.phase3_image }}" alt="{{ post.phase3_image_alt }}" class="phase3-image"/>
             </div>
+          </section>
+          <section id="row-5">
+            <div id="bottom-banner">
+              <img src="{{ post.bottom_banner_image }}" alt="{{ post.bottom_banner_image_alt }}"/>
           </section>
           <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
         </div>
