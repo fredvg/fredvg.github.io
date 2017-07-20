@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="portfolio">
+        <h2 class="content post-title">{{page.title}}</h2>
+        <img src="{{ page.banner_image }}" class="main-image" alt="{{ page.title }} banner image"/>
+        {{ content }}
+        <section id="feature1">
+          <img src="{{ page.feature1_image }}" class="feature1-image" />
+          <div>
+            {{page.feature1_description}}
+          </div>
+	      </section>
+        <section id="feature2">
+          <div>
+            {{page.feature2_description}}
+          </div>
+          <img src="{{ page.feature2_image }}" class="feature2-image" />
+	      </section>
+      </div>
+      <nav class="post-navigation">
+        <ul>
+        {% if page.next.url %}
+         <li class="prev"><a class="post-nav" href="{{page.next.url}}">&laquo; {{page.next.title}}</a></li>
+        {% else %}
+          <li class="prev">&nbsp;</li>
+        {% endif %}
+        <li class="overview"><a class="post-nav" href="/#portfolio">&raquo; Porfolio&nbsp;&laquo;</a></li>
+        {% if page.previous.url %}
+        <li class="next"><a class="post-nav" href="{{page.previous.url}}">{{page.previous.title}}&nbsp;&raquo;</a></li>
+        {% else %}
+          <li class="next">&nbsp;</li>
+        {% endif %}
+        </ul>
+      </nav>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

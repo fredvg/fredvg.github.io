@@ -42,6 +42,8 @@ $blue-grey-light:  #D2E4E6;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 $emphasis-color: #EB5515;
+$emphasis-color-2: #A82434;
+
 // #1E5D7A
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -51,6 +53,53 @@ $size-s: 768px;
 $size-m: 960px;
 $size-l: 1200px;
 $size-xl: 1400px;
+
+
+//Test Classes
+.color-palette {
+  margin-top: 150px;
+  div {
+    display: inline-flex;
+    width: 200px;
+    height: 100px;
+    &.text-color {
+      background: $text-color;
+    }
+    &.background-color {
+      background: $background-color;
+    }
+    &.brand-color {
+      background: $brand-color;
+    }
+    &.link-color {
+      background: $link-color;
+    }
+    &.dark-blue {
+      background: $dark-blue;
+    }
+    &.grey-color {
+      background: $grey-color;
+    }
+    &.blue-grey {
+      background: $blue-grey;
+    }
+    &.blue-grey-light {
+      background: $blue-grey-light;
+    }
+    &.grey-color-light {
+      background: $grey-color-light;
+    }
+    &.grey-color-dark {
+      background: $grey-color-dark;
+    }
+    &.emphasis-color {
+      background: $emphasis-color;
+    }
+    &.emphasis-color-2 {
+      background: $emphasis-color-2;
+    }
+  }
+}
 
 // Using media queries with like this:
 // @include media-query($palm) {
@@ -818,6 +867,97 @@ div.portfolio {
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 100px 20px 20px;
     }
+}
+
+/* NEW PORTFOLIO */
+
+.portfolio-modal {
+  section {padding: 0;}
+  h2 {
+    font-family: $base-font-family;
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-weight: 900;
+    padding: 0;
+    color: $dark-blue;
+  }
+  h3 {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px solid $dark-blue;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 4px;
+    float: right;
+    text-align: right;
+  }
+  // #description {
+  //   background: $emphasis-color;
+  //   padding: 2rem;
+  //   color: #fff;
+  //   h3 {
+  //     border-bottom: 2px solid #fff;
+  //   }
+  // }
+  // #challenges {
+  //   color: $background-color;
+  //   h3 {
+  //     border-bottom-color:$background-color;
+  //   }
+  // }
+  box-sizing: border-box;
+  #row-1, #row-2, #row-3, #row-4 {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    .col-1, .col-2, .col-3 {
+      padding: 24px;
+    }
+  }
+  #row-1 {
+    font-weight: 400;
+    background-color: $dark-blue;
+    color: $background-color;
+    margin-bottom: 16px;
+    h3 {
+      color: $background-color;
+      border-bottom: 2px solid $background-color;
+    }
+    .col-1 {
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+    .col-2 {
+      grid-column-start: 5;
+      grid-column-end: 10;
+    }
+    .col-3 {
+      grid-column-start: 10;
+      grid-column-end: 15;
+      h3 {
+        float: left;
+        text-align: left;
+      }
+    }
+  }
+  #row-2, #row-3, #row-4 {
+    .col-1 {
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+    .col-2 {
+      grid-column-start: 5;
+      grid-column-end: 10;
+    }
+    .col-3 {
+      grid-column-start: 10;
+      grid-column-end: 15;
+      // background: $brand-color;
+    }
+  }
+  #bottom-banner {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
 
 /* TEST NEAT */

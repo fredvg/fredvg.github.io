@@ -1,38 +1,71 @@
- <!-- Portfolio Modals -->
- {% for post in site.posts %}
-    <div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>{{ post.title }}</h2>
-                            <hr class="star-primary">
-                            <img src="{{ post.banner_image }}" class="banner_image img-responsive img-centered" alt="{{ post.alt }}">
-                            <p>{{ post.content }}</p>
-                            <section id="feature1">
-                              <img src="{{ post.feature1_image }}" class="feature1-image" />
-                              <div>
-                                {{ post.feature1_description }}
-                              </div>
-                    	      </section>
-                            <section id="feature2">
-                              <div>
-                                {{ post.feature2_description }}
-                              </div>
-                              <img src="{{ post.feature2_image }}" class="feature2-image" />
-                            </section>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- Portfolio Modals -->
+{% for post in site.posts %}
+  <div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
         </div>
+      </div>
+      <div class="container">
+        <div class="modal-body">
+          <h2>{{ post.title }}</h2>
+            <section id="row-1">
+                <div class="col-1">
+                  <h3>{{ post.problem_title }}</h3>
+                <!-- <img src="{{ post.main_image }}" alt="{{ post.main_image_alt }}" class="main-image"/> -->
+                </div>
+                <div class="col-2">
+                  {{ post.problem_description }}
+                </div>
+            <div class="col-3">
+              <div id="challenges">
+                <h3>{{ post.challenges_title }}</h3>
+                {{ post.challenges_description }}
+              </div>
+            </div>
+          </section>
+          <section id="row-2">
+            <div class="col-1">
+              <h3 class="phase1-title">{{ post.phase1_title }}</h3>
+            </div>
+            <div class="col-2">
+              <p class="phase1-description">{{ post.phase1_description }}</p>
+            </div>
+            <div class="col-3">
+              <img src="{{ post.phase1_image }}" alt="{{ post.phase1_image_alt }}" class="phase1-image"/>
+            </div>
+          </section>
+          <section id="row-3">
+            <div class="col-1">
+              <h3 class="phase2-title">{{ post.phase2_title }}</h3>
+            </div>
+            <div class="col-2">
+              <p class="phase2-description">{{ post.phase2_description }}</p>
+            </div>
+            <div class="col-3">
+              <img src="{{ post.phase2_image }}" alt="{{ post.phase2_image_alt }}" class="phase2-image"/>
+            </div>
+          </section>
+          <section id="row-4">
+            <div class="col-1">
+              <h3 class="phase3-title">{{ post.phase3_title }}</h3>
+            </div>
+            <div class="col-2">
+              <p class="phase3-description">{{ post.phase3_description }}</p>
+            </div>
+            <div class="col-3">
+              <img src="{{ post.phase3_image }}" alt="{{ post.phase3_image_alt }}" class="phase3-image"/>
+            </div>
+          </section>
+          <section id="row-5">
+            <div id="bottom-banner">
+              <img src="{{ post.bottom_banner_image }}" alt="{{ post.bottom_banner_image_alt }}"/>
+          </section>
+          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+        </div>
+      </div>
     </div>
+  </div>
 {% endfor %}
