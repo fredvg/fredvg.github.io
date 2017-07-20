@@ -21,7 +21,7 @@ challenges_description: "<p>Most of these projects were as part of my day job. S
 
 phase1_title: "Vermont Interactive Branding"
 phase1_description: "As we plan to rename our company from the inaccurate and hard to pronounce Vermont Information Consortium to Vermont Interactive, we need a new brand. In order to determine our core message and voice, I conducted interviews, and organized workshops, with internal and external stakeholders. While the rebranding is a work in progress, the current version of the logo is very close to final. The new logo features the classic Vermont mountains silhouette. This graphic element is a subtle nod to the official State of Vermont&nbsp;logo."
-phase1_image: /images/portfolio/visual design/VI-logo.svg
+phase1_image: /images/portfolio/visual design/vi-logo.svg
 phase1_image_alt: "vermont interactive logo design process"
 
 phase2_title: "Logo Designs"
