@@ -5,7 +5,7 @@ categories: portfolio "CMS" "UI/UX"
 modal-id: 3
 
 title:  "State of Vermont CMS"
-main_image: /images/portfolio/cms/cms-thumb.png
+main_image: /images/portfolio/cms/cms_thumb.png
 main_image_alt: "State of Vermont CMS Thumbnail"
 
 problem_title: "Drupal 7 CMS"
