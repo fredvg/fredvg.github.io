@@ -2,7 +2,7 @@
 layout: portfolio
 date:   2017-07-05 22:03:28
 categories: portfolio "branding" "visual design"
-modal-id: 7
+modal-id: 1
 
 title:  "Visual Design"
 main_image: /images/portfolio/VIC/VIC_Thumb.png
@@ -26,7 +26,7 @@ phase1_image_alt: "vermont interactive logo design process"
 
 phase2_title: "Logo Designs"
 phase2_description: "The logos I've designed have ranged from pro-bono work for small local initiatives, like CapCityCafeMoto, to large products and company logos."
-phase2_image: /images/portfolio/visual design/CCCM-logo-small.png
+phase2_image: /images/portfolio/visual design/various-logos.png
 phase2_image_alt: "samples of logos"
 
 phase3_title: "Illustrations"

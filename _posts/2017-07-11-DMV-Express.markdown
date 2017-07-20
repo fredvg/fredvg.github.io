@@ -2,16 +2,16 @@
 layout: portfolio
 date:   2017-07-11 22:05:30
 categories: portfolio "application" "UI/UX"
-modal-id: 6
+modal-id: 2
 
 title:  "DMV Express"
 main_image: /images/portfolio/dmv-express/dmv-express-thumb.png
 main_image_alt: "DMV Express Thumbnail"
 
 problem_title: "DMV Express redesign"
-problem_description: "DMV Express is an online service that allows citizens to interact with the Vermont Department of Motor Vehicles. Since the front-end hasn't been updated since its original launch in 2004, the application is badly outdated, not very intuitive to use, and limited in functionality. We opted for a phased approach, first we decoupled the front-end from the back-end (yes, a thirteen year old application means that this hadn't been done yet). Then we redesigned the front-end from the ground up. In a second phase we will add additional functionality (DMV services such as license renewals)."
+problem_description: "DMV Express is an online service that allows citizens to interact with the Vermont Department of Motor Vehicles. Since the front-end hasn't been updated since its original launch in 2004, the application is badly outdated, not very intuitive, and limited in functionality. We opted for a phased approach, first we decoupled the front-end from the back-end (yes, a thirteen year old application means that this hadn't been done yet). Then we redesigned the front-end from the ground up. In a second phase we will add additional functionality (DMV services such as license renewals)."
 challenges_title: "Challenges"
-challenges_description: "<p>Even though the application has gone without significant changes in 13 years, DMV Express 1.0 was still a very popular and well-loved online service for State of Vermont</p>
+challenges_description: "<p>Even though the application has gone without significant changes in 13 years, DMV Express 1.0 is still a very popular and well-loved online service for State of Vermont</p>
                           <ul>
                             <li>Both citizens and DMV employees have become very familiar with the UX/UI over the years</li>
                             <li>Many, sometimes complex, business rules results in a large amount of edge cases</li>
@@ -20,7 +20,7 @@ challenges_description: "<p>Even though the application has gone without signifi
                         "
 
 phase1_title: "Research"
-phase1_description: "After closely examining the — limited — Google Analytics that we have available, and reviewining hundreds of customer support emails, I did user interviews, went on field trips, and organized stakeholder workshops. I drew story boards and journey maps, created personas and broke the various functions of the application down into user stories."
+phase1_description: "After closely examining the — limited — Google Analytics that we have available, and reviewing hundreds of customer support emails, I did user interviews, went on field trips, and organized stakeholder workshops. I drew story boards and journey maps, created personas and broke the various functions of the application down into user stories."
 phase1_image: /images/portfolio/dmv-express/dmv-express-personas.png
 phase1_image_alt: "dmv express personas samples"
 
