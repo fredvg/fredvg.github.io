@@ -38,7 +38,7 @@ phase2_image: /images/portfolio/cms/cms_icon-widgets.png
 phase2_image_alt: "sample of icon widgets in two column region"
 
 phase3_title: "Outcome"
-phase3_description: "We managed to achieve all of the above and —almost— kept project hours within the allocated budget. The new template was very well received and adoption rates for the CMS grew exponentially. Two years later, all Drupal 6 sites had been migrated and the total number of sites had grown to over 100. Today, the system serves tens of thousands of visitors monthly and saves the State of Vermont an estimated $1,000,000 annually."
+phase3_description: "We managed to achieve all of the above and — almost — kept project hours within the allocated budget. The new template was very well received and adoption rates for the CMS grew exponentially. Two years later, all Drupal 6 sites had been migrated and the total number of sites had grown to over 100. Today, the system serves tens of thousands of visitors monthly and saves the State of Vermont an estimated $1,000,000 annually. The sytem and associated template have won several awards, including a Statescoop Award and several Hermes Creative Awards."
 phase3_image: /images/portfolio/cms/cms_cmo-overview.png
 phase3_image_alt: "CMO internal page overview"
 
