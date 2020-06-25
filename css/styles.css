@@ -1,0 +1,13 @@
+html {}
+body {background-color: white; font-size: 18px; font-family: 'lato', sans-serif; max-width: 320px; padding: .5em; line-height: 1.3em; margin:0 auto;}
+h1, h2, h3 {font-family: 'Montserrat', sans-serif;}
+h1 {font-size: 3.5em; line-height: .85em; margin:0; background-color: #000; color: #fff;}
+h1 span {display: block; font-size: .6em;}
+span.role {display: block; font-size: .4em; line-height: 1.2em;}
+h2 {margin-top: 1.25em; color: #fff; background-color: #000; padding: 4px 0;}
+h3 {margin-top: 1.25em; margin-bottom:.5em;}
+a {color:#0000BB;}
+#contact ul {list-style: none; padding-left: .5em;}
+ul {list-style: square; padding-left: 1em;}
+li {margin: .75em 0;}
+footer {font-family: 'Montserrat', sans-serif; font-size: .75em; sans-serif; color:#fff; background-color: #000; margin-top: 3em;}
