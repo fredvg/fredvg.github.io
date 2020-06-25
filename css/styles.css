@@ -1,7 +1,7 @@
 html {}
 body {background-color: white; font-size: 18px; font-family: 'lato', sans-serif; max-width: 310px; padding: .5em; line-height: 1.3em; margin:0 auto;}
 @media only screen 
-  and (min-device-width: 320px) {
+  and (min-device-width: 480px) {
     body {width: 90%; max-width: 640;}
 }
 h1, h2, h3 {font-family: 'Montserrat', sans-serif;}
