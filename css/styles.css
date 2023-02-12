@@ -56,6 +56,9 @@ a:hover {
   color:#061F4A;
   border-bottom: 4px solid #061F4A;
 }
+a:focus {
+    border: 4px solid #061F4A;
+}
 a:visited {
   color: #6B1348;
   }
